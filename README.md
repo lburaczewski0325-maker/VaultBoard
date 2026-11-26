@@ -1,2 +1,3 @@
 # VaultBoard
-VaultBoard: an Android keyboard with voice input, English-to-Spanish translation, and secure messaging tools.
+
+Native Android keyboard for Android 8.0+ with voice input, English-Spanish translation, and contact-specific encrypted messaging.
