@@ -2,16 +2,25 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="6dp"
+    android:background="?android:colorBackground">
 
     <EditText
         android:id="@+id/preview"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="VaultBoard" />
+        android:layout_height="42dp"
+        android:hint="VaultBoard"
+        android:focusable="false" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="⌨ QWERTY • 🎙 Voice • ES Translate • 🔐 Encrypt/Decrypt" />
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <Button android:id="@+id/keyA" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="A" />
+        <Button android:id="@+id/keyB" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="B" />
+        <Button android:id="@+id/keyC" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="C" />
+        <Button android:id="@+id/keyMic" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="🎙" />
+        <Button android:id="@+id/keyBackspace" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="⌫" />
+        <Button android:id="@+id/keyEnter" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="↵" />
+    </LinearLayout>
 </LinearLayout>

@@ -16,6 +16,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".KeyVaultActivity"
+            android:exported="false" />
+
         <service
             android:name=".VaultBoardIME"
             android:exported="true"
